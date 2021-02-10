@@ -17,7 +17,7 @@ Thanks for checking out this front-end coding challenges list.
 - [Huddle landing page with a single introductory section](./huddle-landing-page-with-single-introductory-section-master#README.md) - HTML, CSS and a tiny bit of JavaScript.
 - [Ping single column coming soon page](./ping-coming-soon-page-master#README.md) - HTML, SCSS and a tiny bit of JavaScript, in my solution add a thank you page for subscribers.
 - [Single price grid component](./single-price-grid-component-master#README.md) - HTML, SCSS 
-- [Intro component with sign-up form](https://alcs-signup-form.netlify.app/) - Sign-up form complete with client-side validation using JavaScript.
+- [Intro component with sign-up form](./intro-component-with-signup-form-master#README.md) - Sign-up form complete with client-side validation using JavaScript.
 
 
 ## Means

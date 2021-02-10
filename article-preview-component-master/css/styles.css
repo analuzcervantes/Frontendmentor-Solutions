@@ -1,0 +1,308 @@
+:root {
+  --very-dark-grayish: hsl(217, 19%, 35%);
+  --desaturated-dark: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--light-grayish);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.attribution {
+  margin-top: auto;
+  margin-bottom: 15px;
+  font-size: 11px;
+}
+
+.attribution-emoji {
+  color: red;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  max-width: 730px;
+  height: 280px;
+  margin-top: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 10px rgba(156, 156, 156, 0.91);
+          box-shadow: 0 2px 10px rgba(156, 156, 156, 0.91);
+  background-color: white;
+}
+
+.card-drawer img {
+  display: block;
+  width: 285px;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 25%;
+     object-position: 0 25%;
+  border-radius: 10px 0 0 10px;
+  -webkit-transition: object-position 3s ease-out;
+  transition: object-position 3s ease-out;
+  transition: object-position 3s ease-out, -o-object-position 3s ease-out;
+}
+
+.card-drawer img:hover {
+  -o-object-position: 100% 10%;
+     object-position: 100% 10%;
+}
+
+.card-content {
+  line-height: 1.6rem;
+  margin: 35px 40px;
+  width: 445px;
+  color: var(--very-dark-grayish);
+}
+
+.card-content h3 {
+  padding-bottom: 20px;
+  padding-right: 20px;
+  line-height: normal;
+  font-size: 1.5em;
+  font-weight: 700;
+  width: 373px;
+}
+
+.card-content p {
+  line-height: 1.5em;
+  margin-bottom: 10px;
+  width: 373px;
+  color: var(--desaturated-dark);
+}
+
+.card-content-autor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  width: 445px;
+}
+
+.card-content-autor img {
+  width: 38px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.card-content-autor-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  line-height: 1rem;
+}
+
+.card-content-autor-info h4,
+.card-content-autor-info p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 115px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.card-content-autor button {
+  position: relative;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  outline: none;
+  left: 37%;
+}
+
+.card-content-autor button svg {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+
+.card-content-autor button:hover {
+  background-color: var(--very-dark-grayish);
+  cursor: pointer;
+}
+
+.card-content-autor button:hover > svg {
+  -webkit-filter: brightness(100);
+  filter: brightness(100);
+}
+
+.card-content-autor-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 18px 20px;
+  height: 60px;
+  width: 250px;
+  right: -25px;
+  bottom: 67px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  background-color: var(--very-dark-grayish);
+  -webkit-box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-content-autor-share:after {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  left: calc(50% - 20px);
+  border: 20px solid transparent;
+  border-top-color: var(--very-dark-grayish);
+  border-bottom: 0;
+}
+
+.card-content-autor-share h4 {
+  margin: 0;
+  padding: 0;
+  color: var(--grayish-blue);
+  letter-spacing: 0.3rem;
+}
+
+.card-content-autor-share svg {
+  margin: 0 10px;
+}
+
+.button-active {
+  padding: 6px 8px;
+  background-color: var(--very-dark-grayish);
+}
+
+.share-icon-active {
+  fill: white;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 325px;
+    height: auto;
+    margin-top: 50px;
+  }
+  .card-drawer img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+  }
+  .card-content {
+    width: auto;
+    height: 240px;
+    margin: 35px 30px 20px;
+  }
+  .card-content h3 {
+    width: auto;
+    padding: 0;
+    font-size: 1.25em;
+    margin-bottom: 15px;
+  }
+  .card-content p {
+    width: auto;
+    font-size: 13.5px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .card-content-autor {
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    padding-bottom: 0;
+  }
+  .card-content-autor-info p {
+    margin: 0;
+  }
+  .card-content-autor button {
+    z-index: 1;
+    left: 20%;
+    padding: 6px 8px;
+    background-color: var(--desaturated-dark);
+  }
+  .card-content-autor button svg {
+    -webkit-filter: brightness(100);
+            filter: brightness(100);
+  }
+  .card-content-autor button:hover {
+    background-color: var(--desaturated-dark);
+    cursor: pointer;
+  }
+  .card-content-autor-share {
+    right: -30px;
+    bottom: 0;
+    height: 65px;
+    width: 325px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    padding: 18px 40px;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--very-dark-grayish);
+  }
+  .card-content-autor-share:after {
+    border: 0 solid transparent;
+    border-top-color: transparent;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

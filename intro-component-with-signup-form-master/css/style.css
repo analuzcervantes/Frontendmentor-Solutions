@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --darkblue: hsl(249, 10%, 26%);
+  --grayishblue: hsl(246, 25%, 77%);
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--red);
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background-image: url(../images/bg-intro-desktop.png);
+}
+
+body main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 7% 10%;
+}
+
+body main article {
+  width: 45%;
+}
+
+body main article h1 {
+  color: white;
+  font-size: 50px;
+}
+
+body main article p {
+  color: white;
+  line-height: 1.5;
+}
+
+body main .container .offer {
+  border: 0;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: var(--blue);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 0px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 0px 0px;
+}
+
+body main .container .offer b {
+  font-weight: 600;
+}
+
+body main .container form {
+  margin-top: 15px;
+  max-width: 513px;
+  padding: 25px 30px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 0px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 0px 0px;
+}
+
+body main .container form div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+body main .container form div input {
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 500;
+  border: solid var(--grayishblue) 0.5px;
+}
+
+body main .container form div input:focus {
+  border: solid var(--blue) 0.5px;
+}
+
+body main .container form div .error {
+  border: solid var(--red) 2px;
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  font-weight: 500;
+  color: var(--red);
+}
+
+body main .container form div .error::-webkit-input-placeholder {
+  color: transparent;
+}
+
+body main .container form div .error:-moz-placeholder {
+  /* Firefox 18- */
+  color: transparent;
+}
+
+body main .container form div .error::-moz-placeholder {
+  /* Firefox 19+ */
+  color: transparent;
+}
+
+body main .container form div .error:-ms-input-placeholder {
+  color: transparent;
+}
+
+body main .container form div .success {
+  border: solid var(--grayishblue) 0.5px;
+  background-image: none;
+}
+
+body main .container form div .label-validation {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 10px;
+  text-align: end;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--red);
+}
+
+body main .container form div .label-success {
+  display: none;
+}
+
+body main .container form .submit {
+  width: 100%;
+  color: white;
+  outline: none;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: var(--green);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 0px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 0px 0px;
+  margin-bottom: 15px;
+}
+
+body main .container form p {
+  color: var(--grayishblue);
+  text-align: center;
+  font-size: 12px;
+}
+
+body main .container form p .terms {
+  font-weight: bold;
+  color: var(--red);
+}
+
+body footer {
+  width: 100%;
+}
+
+body footer .attribution {
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body footer .attribution p {
+  color: white;
+  font-size: 11px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+body footer .attribution a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+body footer .attribution i {
+  color: var(--blue);
+}
+
+@media (max-width: 1024px) {
+  body main {
+    margin: 7% 8%;
+  }
+  body main article h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 850px) {
+  body {
+    background-size: auto;
+    background-image: url(../images/bg-intro-mobile.png);
+  }
+  body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 15%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 20%;
+  }
+  body main article {
+    width: 100%;
+    text-align: center;
+  }
+  body main article h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  body main article p {
+    margin-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -44,9 +44,11 @@
     <p>Subscribe and get notified</p>
 
     <form name="Subscribe" id="subscribe" method="POST" data-netlify="true" action="./thank-you.html">
-      <input type="email" name="email" id="email" placeholder="Your email address.." required>
-      <button type="submit" onclick="validate()">Notify Me</button>
-      <p id="error-text" class="errorText"></p>
+      <label for="email">
+        <input type="email" name="email" id="email" placeholder="Your email address.." required>
+      </label>
+        <button type="submit" onclick="validate()">Notify Me</button>
+        <p id="error-text" class="errorText"></p>
     </form>
 
     <img src="./images/illustration-dashboard.png" alt="Dashboard Demostration" class="demo">

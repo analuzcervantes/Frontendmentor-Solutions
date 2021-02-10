@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --brightyellow: hsl(71, 73%, 54%);
+  --lightgray: hsl(204, 43%, 93%);
+  --grayishblue: hsl(218, 22%, 67%);
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-size: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  background-color: var(--lightgray);
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .wrapper {
+  max-width: 600px;
+  height: 216px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  border-radius: 5px;
+}
+
+body main .wrapper .item-a {
+  padding: 35px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+body main .wrapper .item-a h1 {
+  font-size: 24px;
+  color: var(--cyan);
+  margin-bottom: 20px;
+}
+
+body main .wrapper .item-a h2 {
+  font-size: 18px;
+  color: var(--brightyellow);
+  margin-bottom: 10px;
+}
+
+body main .wrapper .item-a p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--grayishblue);
+}
+
+body main .wrapper .item-b {
+  color: white;
+  padding: 35px;
+  border-radius: 0 0 0 5px;
+  background-color: var(--cyan);
+}
+
+body main .wrapper .item-b h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+body main .wrapper .item-b .price {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+body main .wrapper .item-b .price .dolar {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+body main .wrapper .item-b .price .per {
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
+body main .wrapper .item-b p {
+  font-size: 14.2px;
+  color: var(--lightgray);
+}
+
+body main .wrapper .item-b .sign-up {
+  border: 0;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  margin-top: 25px;
+  border-radius: 5px;
+  color: var(--lightgray);
+  background-color: var(--brightyellow);
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px;
+}
+
+body main .wrapper .item-b .sign-up:hover {
+  background-color: #b3ce3b;
+}
+
+body main .wrapper .item-c {
+  padding: 35px;
+  border-radius: 0 0 5px 0;
+  background-color: rgba(42, 178, 175, 0.8);
+}
+
+body main .wrapper .item-c h2 {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+body main .wrapper .item-c li {
+  line-height: 18px;
+  list-style: none;
+  font-size: 12px;
+  color: var(--lightgray);
+  opacity: 0.8;
+}
+
+body footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+body footer .attribution {
+  text-align: center;
+  font-size: 11px;
+}
+
+body footer .attribution a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+body footer .attribution i {
+  color: red;
+}
+
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    height: 100vh;
+  }
+  body footer {
+    top: 0;
+    padding-top: 1em;
+    position: absolute;
+  }
+}
+
+@media all and (max-width: 650px) {
+  body main .wrapper {
+    max-width: 300px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  body main .wrapper .item-a h1 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  body main .wrapper .item-a h2 {
+    font-size: 15px;
+  }
+  body main .wrapper .item-a p {
+    font-size: 12.5px;
+    margin-top: 20px;
+    line-height: 2;
+  }
+  body main .wrapper .item-b {
+    border-radius: 0;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+  body main .wrapper .item-c {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    border-radius: 0 0 5px 5px;
+  }
+  body footer {
+    position: absolute;
+    top: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

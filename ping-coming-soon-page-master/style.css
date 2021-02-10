@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --paleblue: hsl(223, 100%, 88%);
+  --lightred: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --verydarkblue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-height: 100vh;
+  font-size: 20px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+body main {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .logo {
+  margin-top: 4em;
+  width: 82px;
+}
+
+body main h1 {
+  font-size: 46px;
+  font-weight: 300;
+  color: var(--gray);
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+}
+
+body main h1 b {
+  font-weight: 600;
+  color: var(--verydarkblue);
+}
+
+body main p {
+  margin-bottom: 2em;
+}
+
+body main .sussed {
+  color: #07cc4f;
+}
+
+body main .check i {
+  font-size: 100px;
+}
+
+body main .back {
+  font-weight: 600;
+  margin-top: 2em;
+  color: var(--verydarkblue);
+  text-decoration: none;
+}
+
+body main form input {
+  height: 2em;
+  width: 22em;
+  border: none;
+  outline: none;
+  padding: 1.7em;
+  font-size: 17px;
+  border-radius: 50px;
+  border: 1px solid var(--paleblue);
+}
+
+body main form input:focus {
+  border: 1px solid var(--blue);
+}
+
+body main form inputrequired:valid {
+  border: 1px solid var(--lightred);
+}
+
+body main form button {
+  width: 12em;
+  height: 3em;
+  color: white;
+  margin-left: 0.5em;
+  border: none;
+  outline: none;
+  background-color: var(--blue);
+  -webkit-box-shadow: 0 2px 5px 3px #c2d3ff;
+          box-shadow: 0 2px 5px 3px #c2d3ff;
+  border-radius: 50px;
+}
+
+body main form .errorText {
+  margin-left: 32px;
+  margin-top: 11px;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--lightred);
+}
+
+body main .demo {
+  margin: 3em;
+  width: 640px;
+}
+
+body main li {
+  display: inline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+body main li a {
+  width: 40px;
+  height: 40px;
+  color: var(--blue);
+  margin-left: 14px;
+  font-size: 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  border: 0.5px solid var(--gray);
+}
+
+body main li a:hover {
+  color: white;
+  background-color: var(--blue);
+}
+
+body footer {
+  margin: 28px;
+}
+
+body footer .attribution {
+  font-size: 11px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+body footer .attribution a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--verydarkblue);
+}
+
+body footer .attribution i {
+  color: var(--lightred);
+}
+
+.error {
+  border: 1px solid var(--lightred);
+}
+
+@media (max-width: 750px) {
+  body main .logo {
+    width: 107px;
+    margin-top: 170px;
+  }
+  body main h1 {
+    margin-top: 90px;
+    margin-bottom: 44px;
+  }
+  body main p {
+    margin-bottom: 67px;
+  }
+  body main form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 3em;
+  }
+  body main form input {
+    width: 563px;
+    height: 81px;
+    margin-bottom: 84px;
+  }
+  body main form .errorText {
+    margin-top: -12em;
+  }
+  body main form button {
+    width: 563px;
+    height: 81px;
+  }
+  body main .demo {
+    margin-top: 80px;
+    margin-bottom: 238px;
+  }
+  body footer {
+    margin: 60px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    max-width: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main {
+    max-width: 100vh;
+    width: 100%;
+    /*
+        
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                margin-bottom: 67px;
+            }
+
+            form {
+                width: 425px;
+                align-items: center;
+
+                input {
+                    width: 80%;
+                    
+                }
+
+                button {
+                    width: 80%;
+                }
+            }
+
+        
+
+            */
+  }
+  body main .logo {
+    margin-top: 120px;
+  }
+  body main .demo {
+    width: 100%;
+    padding: 20px;
+  }
+  body main h1 {
+    font-size: 30px;
+  }
+  body main form {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main form input, body main form button {
+    width: 90%;
+  }
+  body footer {
+    margin: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  body main h1 {
+    font-size: 26px;
+  }
+  body main .sussed {
+    text-align: center;
+  }
+  body main form {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main form input, body main form button {
+    width: 90%;
+  }
+  body footer {
+    margin: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- Primary Meta Tags -->
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <meta name="author" content="Ana Luz Cervantes">
+  <meta name="title" content="Frontend Mentor | Ping coming soon page">
+  <meta name="description" content="Ping Coming Soon Landing page from Frontend Mentor using HTML, SCSS & JS">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alcs-ping.netlify.app/">
+  <meta property="og:title" content="Frontend Mentor | Ping coming soon page">
+  <meta property="og:description" content="Ping Coming Soon Landing page from Frontend Mentor using HTML, SCSS & JS">
+  <meta property="og:image" content="https://alcs-articlepreview.netlify.app/design/desktop-preview.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://alcs-ping.netlify.app/">
+  <meta property="twitter:title" content="Frontend Mentor | Ping coming soon page">
+  <meta property="twitter:description" content="Ping Coming Soon Landing page from Frontend Mentor using HTML, SCSS & JS">
+  <meta property="twitter:image" content="https://alcs-ping.netlify.app/design/desktop-preview.jpg">
+
+  <!-- STYLES -->
+  <script src="https://kit.fontawesome.com/96ff0a9160.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+
+  <main>
+
+    <img src="./images/logo.svg" alt="Ping Logo" class="logo"> 
+
+    <h1>We are launching <b>soon!</b></h1>
+
+    <p>Subscribe and get notified</p>
+
+    <form name="Subscribe" id="subscribe" method="POST" data-netlify="true" action="./thank-you.html">
+      <input type="email" name="email" id="email" placeholder="Your email address.." required>
+      <button type="submit" onclick="validate()">Notify Me</button>
+      <p id="error-text" class="errorText"></p>
+    </form>
+
+    <img src="./images/illustration-dashboard.png" alt="Dashboard Demostration" class="demo">
+
+    <ul>
+      <li>
+        <a href="https://www.facebook.com/" target="_blank" >
+          <i class="fab fa-facebook-f"></i>
+          <span style="display: none;">Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fab fa-twitter"></i>
+          <span style="display: none;">Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://instagram.com/" target="_blank">
+          <i class="fab fa-instagram"></i>
+          <span style="display: none;">Instagram</span>
+        </a>
+      </li>
+    </ul>
+
+  </main>
+
+  <footer>
+    <p class="attribution">
+      &copy; Copyright Ping. All rights reserved. 
+      Coded by <a href="http://analuzcervantes.netlify.app/">Ana Luz Cervantes</a> with <i class="fas fa-heart" aria-hidden="true"></i>
+    </p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

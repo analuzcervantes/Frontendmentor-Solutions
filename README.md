@@ -18,6 +18,7 @@ Thanks for checking out this front-end coding challenges list.
 - [Ping single column coming soon page](./ping-coming-soon-page-master#README.md) - HTML, SCSS and a tiny bit of JavaScript, in my solution add a thank you page for subscribers.
 - [Single price grid component](./single-price-grid-component-master#README.md) - HTML, SCSS 
 - [Intro component with sign-up form](./intro-component-with-signup-form-master#README.md) - Sign-up form complete with client-side validation using JavaScript.
+- [Base Apparel coming soon page](./base-apparel-coming-soon-master#README.md) - Basic form validation with JavaScript.
 
 
 ## Means

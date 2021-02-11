@@ -1,0 +1,184 @@
+:root {
+    --desred: hsl(0, 36%, 70%);
+    --softred: hsl(0, 93%, 68%);
+    --darkGrayishRed: hsl(0, 6%, 24%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
+    main{
+        min-height: 100vh;
+        
+        .left {
+            padding: 32px 32px 0;
+            background-size: cover;
+            background-image: url(../images/bg-pattern-desktop.svg);
+            background-position: center center;
+
+            .logo {
+                margin-bottom: 60px;
+                height: 23px;
+                width: 102px;
+            }
+
+            .bg-mobile {
+                margin-left: -32px;
+                width: calc(100% + 64px);
+            }
+
+            h1 {
+                font-size: 31px;
+                font-weight: 600;
+                text-align: center;
+                letter-spacing: 10px;
+                text-transform: uppercase;
+                color: var(--darkGrayishRed);
+
+                span {
+                    font-weight: 300;
+                    color: var(--desred);
+                }
+            }
+
+            p {
+                line-height: 1.5;
+                text-align: center;
+                color: var(--desred);
+            }
+
+            form {
+                margin-top: 40px;
+                position: relative;
+
+                input {
+                    width: 100%;
+                    outline: none;
+                    padding: 15px 20px;
+                    margin-bottom: 15px;
+                    border-radius: 50px;
+                    color: var(--desred);
+                    border: 1px solid var(--desred);
+
+                    &::-webkit-input-placeholder { color: var(--desred) }
+                    &:-moz-placeholder { /* Firefox 18- */ color: var(--desred); }
+                    &::-moz-placeholder { /* Firefox 19+ */ color: var(--desred) }
+                    &:-ms-input-placeholder { color: var(--desred);}
+                }
+
+                button {
+                    right: 0;
+                    top: 0;
+                    border: none;
+                    position: absolute;
+                    width: 80px;
+                    height: 50px;
+                    outline: none;
+                    border-radius: 30px;
+                    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.315);
+                    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+                    &:hover{           
+                        height: 51px;
+                        opacity: 0.6;
+                    }   
+                }
+
+                .error {
+                    border: solid 2px var(--softred);
+                    background-image: url(../images/icon-error.svg);
+                    background-repeat: no-repeat;
+                    background-position: 75% 50%;
+                    color: var(--darkGrayishRed);
+                }
+    
+                .label-validation {
+                    width: 100%;
+                    padding-top: 30px;
+                    margin-left: 20px;
+                    font-size: 14px;
+                    color: var(--softred);
+                }
+            }
+
+            
+
+            .footer {
+                max-height: 100vh;
+                padding-top: 70px;
+                padding-bottom: 10px;
+                width: 100%;
+
+                .attribution {
+                    text-align: center;
+                    font-size: 11px;
+
+                    a { 
+                        text-decoration: none;
+                        color: var(--darkGrayishRed);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 601px){
+
+    body {
+        main {
+            display: flex;
+
+            .left {
+                width: 60vw;
+                padding: 65px 65px 0;
+
+                .logo {
+                   width: 160px;
+                   height: 35px;
+                }
+
+                .bg-mobile{
+                    display: none;
+                }
+
+                h1 {
+                    font-size: 48px;
+                    text-align: left;
+                }
+
+                form {
+                    max-width: 450px;
+                }
+
+                p {
+                    max-width: 450px;
+                    text-align: left;
+                }
+
+            }
+            .right {
+                width: 40vw;
+                background-size: cover;
+                background-position: center center;
+                background-image: url(../images/hero-desktop.jpg);
+            }
+        }
+    }
+
+}

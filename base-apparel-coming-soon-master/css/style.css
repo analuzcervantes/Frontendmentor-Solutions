@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+:root {
+  --desred: hsl(0, 36%, 70%);
+  --softred: hsl(0, 93%, 68%);
+  --darkGrayishRed: hsl(0, 6%, 24%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  height: 100vh;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, white, #fff5f5);
+}
+
+body main {
+  min-height: 100vh;
+}
+
+body main .left {
+  padding: 32px 32px 0;
+  background-size: cover;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-position: center center;
+}
+
+body main .left .logo {
+  margin-bottom: 60px;
+  height: 23px;
+  width: 102px;
+}
+
+body main .left .bg-mobile {
+  margin-left: -32px;
+  width: calc(100% + 64px);
+}
+
+body main .left h1 {
+  font-size: 31px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: var(--darkGrayishRed);
+}
+
+body main .left h1 span {
+  font-weight: 300;
+  color: var(--desred);
+}
+
+body main .left p {
+  line-height: 1.5;
+  text-align: center;
+  color: var(--desred);
+}
+
+body main .left form {
+  margin-top: 40px;
+  position: relative;
+}
+
+body main .left form input {
+  width: 100%;
+  outline: none;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 50px;
+  color: var(--desred);
+  border: 1px solid var(--desred);
+}
+
+body main .left form input::-webkit-input-placeholder {
+  color: var(--desred);
+}
+
+body main .left form input:-moz-placeholder {
+  /* Firefox 18- */
+  color: var(--desred);
+}
+
+body main .left form input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--desred);
+}
+
+body main .left form input:-ms-input-placeholder {
+  color: var(--desred);
+}
+
+body main .left form button {
+  right: 0;
+  top: 0;
+  border: none;
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  outline: none;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.315);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.315);
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+body main .left form button:hover {
+  height: 51px;
+  opacity: 0.6;
+}
+
+body main .left form .error {
+  border: solid 2px var(--softred);
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  color: var(--darkGrayishRed);
+}
+
+body main .left form .label-validation {
+  width: 100%;
+  padding-top: 30px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: var(--softred);
+}
+
+body main .left .footer {
+  max-height: 100vh;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+body main .left .footer .attribution {
+  text-align: center;
+  font-size: 11px;
+}
+
+body main .left .footer .attribution a {
+  text-decoration: none;
+  color: var(--darkGrayishRed);
+}
+
+@media screen and (min-width: 601px) {
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .left {
+    width: 60vw;
+    padding: 65px 65px 0;
+  }
+  body main .left .logo {
+    width: 160px;
+    height: 35px;
+  }
+  body main .left .bg-mobile {
+    display: none;
+  }
+  body main .left h1 {
+    font-size: 48px;
+    text-align: left;
+  }
+  body main .left form {
+    max-width: 450px;
+  }
+  body main .left p {
+    max-width: 450px;
+    text-align: left;
+  }
+  body main .right {
+    width: 40vw;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/hero-desktop.jpg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

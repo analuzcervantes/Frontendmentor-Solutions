@@ -19,6 +19,7 @@ Thanks for checking out this front-end coding challenges list.
 - [Single price grid component](./single-price-grid-component-master#README.md) - HTML, SCSS 
 - [Intro component with sign-up form](./intro-component-with-signup-form-master#README.md) - Sign-up form complete with client-side validation using JavaScript.
 - [Base Apparel coming soon page](./base-apparel-coming-soon-master#README.md) - Basic form validation with JavaScript.
+- [Four card feature section](./four-card-feature-section-master#README.md) - Multi-column and responsive layouts.
 
 
 ## Means

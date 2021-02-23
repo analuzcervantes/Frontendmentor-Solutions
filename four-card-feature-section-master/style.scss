@@ -1,0 +1,176 @@
+
+// Primary Colors
+$p-red: hsl(0, 78%, 62%);
+$p-cyan: hsl(180, 62%, 55%);
+$p-orange: hsl(34, 97%, 64%);
+$p-blue: hsl(212, 86%, 64%);
+// Neutral Colors
+$VeryDarkBlue: hsl(234, 12%, 34%);
+$GrayishBlue: hsl(229, 6%, 66%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    font-size: 15px;
+    text-align: center;
+    color: $VeryDarkBlue;
+    font-family: 'Poppins', sans-serif;
+    background-color: $VeryLightGray;
+
+    main {
+        margin: 0 auto;
+        max-width: 1440px;
+
+        h1 {
+            line-height: 1.3;
+            margin-top: 90px;
+            font-weight: 200;
+            font-size: calc(22px + (40 - 22) * ((100vw - 375px) / (1440 - 375)));
+            
+            span {
+                display: block;
+                font-weight: 600;
+            }
+        }
+
+        p {
+            margin: 0 auto;
+            line-height: 1.7;
+            color: $GrayishBlue;
+            max-width: calc(1140px/2);   
+            font-size: calc(13.5px + (15 - 13.5) * ((100vw - 375px) / (1440 - 375)));     
+        }
+
+        section {
+            margin-top: 30px;
+            article {
+                width: calc((100vw / 4) - 30px);
+                height: calc((100vh / 2) - 88px);
+                margin: 15px;
+                padding: 15px 30px;
+                text-align: left;
+                border-radius: 5px;
+                position: relative;
+                display: inline-block;
+                background-color: white;
+                box-shadow: 0px 10px 20px rgba($GrayishBlue,0.4);
+
+                &:nth-last-child(1){
+                    border-top: 5px solid $p-orange;
+                }
+                &:nth-last-child(2){
+                    transform: translateY(50%);
+                    border-top: 5px solid $p-blue;
+                }
+                &:nth-last-child(3){
+                    border-top: 5px solid $p-red;
+                }
+                &:nth-last-child(4){
+                    transform: translateY(50%);
+                    border-top: 5px solid $p-cyan;
+                }
+                
+                h2 {
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    font-size: calc(15px + (24 - 15) * ((100vw - 375px) / (1440 - 375)));
+                }
+
+                p {
+                    width: 100%;
+                    line-height: 2;
+                    margin-left: 0;
+                    margin-right: 0;
+                    text-align: left;
+                    color: $GrayishBlue;          
+                }
+
+                img {
+                    right: 32px;
+                    bottom: 32px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+    footer {
+        margin: 2em 0 0.5em;
+
+        .attribution { 
+            font-size: 11px; 
+            text-align: center; 
+
+            a { 
+                color: $p-red; 
+                text-decoration: none;
+            }
+            i{
+                color: $p-red;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    body {
+        main {
+            p {
+                max-width: calc(760px/2);    
+            }
+            section {
+                article{
+                    width: 46%;
+                    height: calc((100vh / 2) - 60px);
+                    &:nth-last-child(1){
+                        transform: translateY(0%);
+                    }
+                    &:nth-last-child(2){
+                        transform: translateY(0%);
+                    }
+                    &:nth-last-child(3){
+                        transform: translateY(0%);
+                    }
+                    &:nth-last-child(4){
+                        transform: translateY(0%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    body {
+        main {
+            p {
+                max-width: calc(560px/2);    
+            }
+            section {
+                article{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    body {
+        main {
+            section {
+                article{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

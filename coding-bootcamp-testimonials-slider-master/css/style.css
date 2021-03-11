@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html body {
+  width: 100%;
+  min-height: 100vh;
+  color: #202046;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 280px 72px;
+  background-image: url(../images/pattern-curve.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+html body main {
+  width: 100%;
+  max-width: 1440px;
+  padding: 16px;
+}
+
+html body main .slider .buttons {
+  z-index: 1;
+  right: 50%;
+  top: 261px;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50px;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  background-color: #FFFFFF;
+}
+
+html body main .slider .buttons .previous,
+html body main .slider .buttons .next {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+html body main .slider .buttons .previous {
+  left: 0;
+  background-image: url("../images/icon-prev.svg");
+}
+
+html body main .slider .buttons .previous:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+html body main .slider .buttons .next {
+  right: 0;
+  background-image: url("../images/icon-next.svg");
+}
+
+html body main .slider .buttons .next:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+html body main .slider .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+html body main .slider .slide .testimonial {
+  padding: 32px 51px;
+  background-size: 60px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url(../images/pattern-quotes.svg);
+}
+
+html body main .slider .slide .testimonial blockquote {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 36px;
+}
+
+html body main .slider .slide .testimonial .author {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+html body main .slider .slide .testimonial .author span {
+  display: block;
+  color: #babacf;
+  font-weight: 500;
+}
+
+html body main .slider .slide .slider-img {
+  width: 100%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/pattern-bg.svg);
+}
+
+html body main .slider .slide .slider-img img {
+  width: 240px;
+  display: block;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 16px 40px 0px rgba(135, 105, 210, 0.4);
+          box-shadow: 0px 16px 40px 0px rgba(135, 105, 210, 0.4);
+}
+
+html body main .slider .slide .active {
+  opacity: 1;
+  -webkit-transform: translateX(0) scale(1);
+          transform: translateX(0) scale(1);
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+html body footer {
+  font-size: 11px;
+  text-align: center;
+}
+
+html body footer a {
+  color: #3e52a3;
+}
+
+html body .hide {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  html body main {
+    max-width: 800px;
+  }
+  html body main .slider .buttons {
+    top: 280px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  html body main {
+    width: 100%;
+    max-width: 1054px;
+    padding: 64px 64px 64px 0;
+  }
+  html body main .slider .buttons {
+    right: 43%;
+    top: 500px;
+  }
+  html body main .slider .slide {
+    position: relative;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  html body main .slider .slide .testimonial {
+    padding: 32px 0 0 0;
+    background-size: 80px;
+    background-position: 19% -7%;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  html body main .slider .slide .testimonial blockquote {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  html body main .slider .slide .testimonial .author span {
+    display: contents;
+  }
+  html body main .slider .slide .slider-img {
+    padding: 55px;
+  }
+  html body main .slider .slide .slider-img img {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

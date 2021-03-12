@@ -52,6 +52,9 @@ body {
 
         section {
             margin-top: 30px;
+            .art {
+                display: none;
+            }
             article {
                 width: calc((100vw / 4) - 30px);
                 height: calc((100vh / 2) - 88px);

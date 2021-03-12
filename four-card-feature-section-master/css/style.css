@@ -45,6 +45,10 @@ body main section {
   margin-top: 30px;
 }
 
+body main section .art {
+  display: none;
+}
+
 body main section article {
   width: calc((100vw / 4) - 30px);
   height: calc((100vh / 2) - 88px);

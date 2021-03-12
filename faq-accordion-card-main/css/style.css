@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Kumbh Sans,sans-serif;
+  font-size: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main {
+  width: 920px;
+  height: 510px;
+  max-width: 920px;
+  background-color: white;
+  border-radius: 22px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 1fr;
+      grid-template-columns: 400px 1fr;
+  grid-gap: 6rem;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-position: 1260% 65%;
+  background-repeat: no-repeat;
+}
+
+body main .wrapper-img {
+  position: relative;
+}
+
+body main .wrapper-img .illustration {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 120% center;
+  background-image: url(../images/illustration-woman-online-desktop.svg);
+}
+
+body main .wrapper-img .box {
+  position: absolute;
+  top: 42%;
+  left: -23%;
+}
+
+body main .container {
+  margin-top: 65px;
+}
+
+body main .container h1 {
+  margin: 0;
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+body main .container .questions {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .container .questions .question-wrapper {
+  width: 350px;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+body main .container .questions .question-wrapper .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .container .questions .question-wrapper .question h3 {
+  margin: 22px 0px;
+  color: #4a4b5e;
+}
+
+body main .container .questions .question-wrapper .question img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body main .container .questions .question-wrapper .answer {
+  padding-bottom: 20px;
+  color: #787887;
+}
+
+body footer {
+  text-align: center;
+  color: #e7e7e9;
+}
+
+body footer a {
+  font-weight: 700;
+  color: #68e1fd;
+  text-decoration: none;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.question-wrapper > .answer {
+  display: none;
+}
+
+.active > .answer {
+  display: block;
+}
+
+.active img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform: all 0.3s ease-in;
+          transform: all 0.3s ease-in;
+}
+
+.active h3 {
+  font-weight: 700;
+}
+
+@media (max-width: 1025px) {
+  body main {
+    width: 800px;
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    margin: 0;
+  }
+  body main {
+    width: 350px;
+    margin-top: 169px;
+    margin-bottom: 32px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 100px 1fr;
+        grid-template-rows: 100px 1fr;
+    grid-gap: 8px;
+    position: relative;
+    padding: 16px;
+    height: 535px;
+  }
+  body main .wrapper-img {
+    background: url("../images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center 590%;
+  }
+  body main .wrapper-img .illustration {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-size: 72%;
+    background-position: center;
+    top: -129%;
+  }
+  body main .wrapper-img .box {
+    width: 55px;
+    left: 19%;
+    top: -30%;
+  }
+  body main .container {
+    margin-top: 0px;
+  }
+  body main .container h1 {
+    text-align: center;
+  }
+  body main .container .questions {
+    width: 100%;
+  }
+  body main .container .questions .question-wrapper {
+    width: 100%;
+  }
+  body main .container .questions .question-wrapper .question h3 {
+    margin: 18px 0px;
+  }
+  body footer {
+    padding: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

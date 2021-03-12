@@ -1,0 +1,206 @@
+
+// GRADIENT COLORS
+$violet: hsl(273, 75%, 66%);
+$blue: hsl(240, 73%, 65%);
+
+// TEXT COLORS
+$VeryDarkGrayishBlue: hsl(237, 12%, 33%);
+$DarkGrayishBlue: hsl(240, 6%, 50%);
+
+// DIVIDERS COLOR
+$LightGrayishBlue: hsl(240, 5%, 91%);
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Kumbh Sans,sans-serif;
+    font-size: 12px;
+    background: linear-gradient($violet, $blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    main {
+        width: 920px;
+        height: 510px;
+        max-width: 920px;
+        background-color: white;
+        border-radius: 22px;
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        grid-gap: 6rem;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-position: 1260% 65%;
+        background-repeat: no-repeat;
+
+        .wrapper-img {
+            position: relative;
+
+            .illustration {
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: 120% center;
+                background-image: url(../images/illustration-woman-online-desktop.svg);
+            }
+
+            .box {
+                position: absolute;
+                top: 42%;
+                left: -23%;
+            }
+        }
+
+        .container {
+            margin-top: 65px;
+
+            h1{
+                margin: 0;
+                font-size: 40px;
+                margin-bottom: 12px;
+            }
+
+            .questions {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .question-wrapper {
+                    width: 350px;
+                    border-bottom: 1px solid $LightGrayishBlue;
+
+                    .question {
+                        display: flex;
+                        cursor: pointer;
+                        transition: 0.4s;
+                        justify-content: space-between;
+
+                        h3 {
+                            margin: 22px 0px;
+                            color: $VeryDarkGrayishBlue;
+                        }
+
+                        img {
+                            align-self: center;
+                        }
+                    }
+                    .answer {
+                        padding-bottom: 20px;
+                        color: $DarkGrayishBlue;
+                    }                    
+                }
+            }
+        }
+    }
+    footer {
+        text-align: center;
+        color: $LightGrayishBlue;
+        a { 
+            font-weight: 700;
+            color: #68e1fd; 
+            text-decoration: none;
+        }
+    }
+}
+
+h3 {
+    font-weight: 400;
+}
+.question-wrapper > .answer {
+    display: none;
+}
+.active > .answer {
+    display: block;
+} 
+.active img {
+    transform: rotate(180deg);
+    transform: all 0.3s ease-in;
+}
+.active h3 {
+    font-weight: 700;
+} 
+
+
+@media (max-width: 1025px) {
+    body {
+        main {
+            width: 800px;
+            grid-gap: 2rem;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        margin: 0;
+        main {
+            width: 350px;
+            margin-top: 169px;
+            margin-bottom: 32px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 1fr;
+            grid-gap: 8px;
+            position: relative;
+            padding: 16px;
+            height: 535px;
+
+            .wrapper-img {
+                background: url("../images/bg-pattern-mobile.svg");
+                background-repeat: no-repeat;
+                background-position: center 590%;
+
+                .illustration {
+                    position: absolute;
+                    width: 100%;
+                    height: 200px;
+                    background-size: 72%;
+                    background-position: center;
+                    top: -129%;
+                }
+
+                .box {
+                    width: 55px;
+                    left: 19%;
+                    top: -30%;
+                  }
+            }
+
+            .container {
+                margin-top: 0px;
+
+                h1 {
+                    text-align: center;
+                }
+                .questions {
+                    width: 100%;
+
+                    .question-wrapper {
+                        width: 100%;
+
+                        .question {
+
+                            h3 {
+                                margin: 18px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            padding: 16px;
+        }
+    }
+}

@@ -1,0 +1,244 @@
+// Primary Colors
+$VeryDarkMagenta: hsl(300, 43%, 22%);
+$SoftPink: hsl(333, 80%, 67%);
+
+// Neutral Colors
+$DarkGrayishMagenta: hsl(303, 10%, 53%);
+$LightGrayishMagenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; 
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $White;
+    font-family: 'Spartan', sans-serif;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+
+    main {
+        height: 70%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 1440px;
+
+        .header {
+            display: flex;
+            margin-bottom: 80px;
+
+            .content {
+                width: 440px;
+                margin-right: 10em;
+                h1 {
+                    font-size: 50px;
+                    margin-bottom: 16px;
+                    letter-spacing: -2px;
+                    color: $VeryDarkMagenta;
+                }
+                p {
+                    width: 440px;
+                    font-size: 16px;
+                    color: $DarkGrayishMagenta;
+                }
+            }
+            
+            .ratings {
+                margin-top: 33px;
+                .rated {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 400px;
+                    height: 53px;
+                    margin: 14px;
+                    padding: 18px 28px;
+                    border-radius: 5px;
+                    background-color: $LightGrayishMagenta;
+    
+                    &:nth-last-child(3){
+                        transform: translateX(-80px);
+                    }
+
+                    &:nth-last-child(2){
+                        transform: translateX(-40px);
+                    }
+
+                    &:nth-last-child(1){
+                        transform: translateX(0px);
+                    }
+    
+                    .icons {
+                        margin-right: 26px;
+                    }
+    
+                    .text {
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: $VeryDarkMagenta;
+                    }
+                }
+
+            }
+        }
+        .reviews {
+            display: flex;
+            justify-content: space-between;
+
+            .review {
+                width: 30%;
+                padding: 32px 24px;
+                border-radius: 8px;
+                color: white;
+                background-color: $VeryDarkMagenta;
+
+                &:nth-last-child(3){
+                    transform: translateY(0px);
+                }
+
+                &:nth-last-child(2){
+                    transform: translateY(24px);
+                }
+
+                &:nth-last-child(1){
+                    transform: translateY(48px);
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                .header {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 24px;
+
+                    img {
+                        height: 40px;
+                        margin-right: 24px;
+                        border-radius: 50%;
+                    }
+                    .autor {
+                        h2{
+                            font-size: 16.5px;
+                            margin-bottom: 6px;
+                        }
+                        span {
+                            font-size: 14px;
+                            color: $SoftPink;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    footer {
+        width: 100%;
+        font-size: 11px;
+        margin-top: 100px;
+        margin-bottom: 16px;
+        position: relative;
+        text-align: center;
+        box-sizing: border-box;
+        
+        a {
+            color: $SoftPink;
+            text-decoration: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    body {
+        height: min-content;
+        padding-top: 80px;
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;        
+        background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+        
+
+        main {
+            height: 100%;
+            width: 100%;
+            padding: 24px;
+    
+            .header {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 0;
+
+                .content {
+                    display: flex; 
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%; 
+                    margin-right: 0;
+
+                    h1 {
+                        font-size: 32px;
+                        text-align: center;
+                        margin-bottom: 24px;
+                    }
+                    p {
+                        width: 60%;
+                        min-width: 320px;
+                        text-align: center;
+                        margin-bottom: 24px;
+                    }
+                }
+                .ratings {
+                    display: flex;
+                    margin-top: 0;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 24px;
+
+                    .rated {
+                        &:nth-last-child(2){
+                            transform: translateX(0px);
+                        }
+                        &:nth-last-child(3){
+                            transform: translateX(0px);
+                        }
+                    }
+                }
+            }
+            .reviews{
+                align-items: center;
+                flex-direction: column;
+
+                .review {
+                    width: 50%;
+                    min-width: 320px;
+                    margin: 16px 0;
+
+                    .header {
+                        flex-direction: row;
+                    }
+                }
+            }
+        }
+    }
+}

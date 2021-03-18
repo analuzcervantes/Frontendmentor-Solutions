@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  font-family: 'Spartan', sans-serif;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+}
+
+body main {
+  height: 70%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1440px;
+}
+
+body main .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+body main .header .content {
+  width: 440px;
+  margin-right: 10em;
+}
+
+body main .header .content h1 {
+  font-size: 50px;
+  margin-bottom: 16px;
+  letter-spacing: -2px;
+  color: #502050;
+}
+
+body main .header .content p {
+  width: 440px;
+  font-size: 16px;
+  color: #937b92;
+}
+
+body main .header .ratings {
+  margin-top: 33px;
+}
+
+body main .header .ratings .rated {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 400px;
+  height: 53px;
+  margin: 14px;
+  padding: 18px 28px;
+  border-radius: 5px;
+  background-color: #f7f2f7;
+}
+
+body main .header .ratings .rated:nth-last-child(3) {
+  -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
+}
+
+body main .header .ratings .rated:nth-last-child(2) {
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+
+body main .header .ratings .rated:nth-last-child(1) {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+body main .header .ratings .rated .icons {
+  margin-right: 26px;
+}
+
+body main .header .ratings .rated .text {
+  font-size: 12px;
+  font-weight: 700;
+  color: #502050;
+}
+
+body main .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .reviews .review {
+  width: 30%;
+  padding: 32px 24px;
+  border-radius: 8px;
+  color: white;
+  background-color: #502050;
+}
+
+body main .reviews .review:nth-last-child(3) {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+body main .reviews .review:nth-last-child(2) {
+  -webkit-transform: translateY(24px);
+          transform: translateY(24px);
+}
+
+body main .reviews .review:nth-last-child(1) {
+  -webkit-transform: translateY(48px);
+          transform: translateY(48px);
+}
+
+body main .reviews .review p {
+  font-size: 14px;
+}
+
+body main .reviews .review .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+body main .reviews .review .header img {
+  height: 40px;
+  margin-right: 24px;
+  border-radius: 50%;
+}
+
+body main .reviews .review .header .autor h2 {
+  font-size: 16.5px;
+  margin-bottom: 6px;
+}
+
+body main .reviews .review .header .autor span {
+  font-size: 14px;
+  color: #ee68a4;
+}
+
+body footer {
+  width: 100%;
+  font-size: 11px;
+  margin-top: 100px;
+  margin-bottom: 16px;
+  position: relative;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body footer a {
+  color: #ee68a4;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    padding-top: 80px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  }
+  body main {
+    height: 100%;
+    width: 100%;
+    padding: 24px;
+  }
+  body main .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0;
+  }
+  body main .header .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-right: 0;
+  }
+  body main .header .content h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  body main .header .content p {
+    width: 60%;
+    min-width: 320px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  body main .header .ratings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 24px;
+  }
+  body main .header .ratings .rated:nth-last-child(2) {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  body main .header .ratings .rated:nth-last-child(3) {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  body main .reviews {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .reviews .review {
+    width: 50%;
+    min-width: 320px;
+    margin: 16px 0;
+  }
+  body main .reviews .review .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=style.css.map */

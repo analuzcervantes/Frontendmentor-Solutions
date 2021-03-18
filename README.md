@@ -22,6 +22,7 @@ Thanks for checking out this front-end coding challenges list.
 - [Four card feature section](./four-card-feature-section-master#README.md) - Multi-column and responsive layouts.
 - [Coding bootcamp testimonials slider](./coding-bootcamp-testimonials-slider-master#README.md) - Great opportunity to play with animations and content transitions.
 - [FAQ accordion card](./faq-accordion-card-main#README.md) - Building out an FAQ accordion.
+- [Social proof section](https://alcs-social-proof.netlify.app) - Built with Flexbox.
 
 
 ## Means
